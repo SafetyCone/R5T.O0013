@@ -5,6 +5,7 @@ namespace R5T.O0013
 {
     public static class Instances
     {
+        public static O0005.IProjectOperations ProjectOperations => O0005.ProjectOperations.Instance;
         public static O0010.IProjectContextOperations ProjectContextOperations_Generation => O0010.ProjectContextOperations.Instance;
         public static L0039.F000.ISolutionDirectoryContextOperator SolutionDirectoryContextOperator => L0039.F000.SolutionDirectoryContextOperator.Instance;
         public static L0039.O000.ISolutionDirectoryContextOperations SolutionDirectoryContextOperations => L0039.O000.SolutionDirectoryContextOperations.Instance;

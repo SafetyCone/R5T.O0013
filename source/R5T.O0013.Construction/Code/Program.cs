@@ -1,13 +1,14 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace R5T.O0013.Construction
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            await Demonstrations.Instance.In_New_SampleSolutionContext();
         }
     }
 }
