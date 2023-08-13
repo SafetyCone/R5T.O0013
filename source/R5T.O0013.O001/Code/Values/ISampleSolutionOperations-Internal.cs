@@ -8,7 +8,7 @@ using R5T.T0159;
 namespace R5T.O0013.O001.Internal
 {
     [ValuesMarker]
-    public partial interface ISolutionOperations : IValuesMarker
+    public partial interface ISampleSolutionOperations : IValuesMarker
     {
         /// <summary>
         /// The sample solution name is <see cref="Z0046.IValues.Sample_SolutionName"/>.

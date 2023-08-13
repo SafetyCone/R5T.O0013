@@ -63,7 +63,7 @@ namespace R5T.O0013
                 Task Create_Client(IProjectContext projectContext)
                 {
                     return projectContext.Run(
-                        Instances.ProjectContextOperations_Generation.Create_BlazorClient(
+                        Instances.ProjectContextOperations.Create_BlazorClient(
                             blazorClientProjectSpecification.ProjectDescription,
                             repositoryUrl,
                             projectFilePath =>
@@ -79,11 +79,11 @@ namespace R5T.O0013
                 Task Create_Server(IProjectContext projectContext)
                 {
                     return projectContext.Run(
-                        Instances.ProjectContextOperations_Generation.Create_WebServerForBlazorClient(
+                        Instances.ProjectContextOperations.Create_WebServerForBlazorClient(
                             serverProjectSpecification.ProjectDescription,
                             repositoryUrl,
                             // Be careful with the Blazor client project file path: it may be captured as null!
-                            creationResult.BlazorClientProjectFilePath,
+                            () => creationResult.BlazorClientProjectFilePath,
                             projectFilePath =>
                             {
                                 creationResult.WebServerProjectFilePath = projectFilePath;
