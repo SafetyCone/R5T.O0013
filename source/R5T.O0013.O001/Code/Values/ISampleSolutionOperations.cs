@@ -46,8 +46,8 @@ namespace R5T.O0013.O001
             var solutionContext = Internal.PrepareAndGetContext(textOutput);
 
             Instances.ActionOperator.Run(
-                solutionContextAction,
-                solutionContext);
+                solutionContext,
+                solutionContextAction);
         }
     }
 }
