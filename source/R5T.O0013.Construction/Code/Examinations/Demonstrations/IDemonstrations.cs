@@ -24,7 +24,7 @@ namespace R5T.O0013.Construction
                     {
                         await Instances.SolutionContextOperations.Create_New_SolutionFile(solutionContext);
 
-                        Instances.VisualStudioOperator.OpenSolutionFile(
+                        Instances.VisualStudioOperator.Open_SolutionFile(
                             solutionContext.SolutionFilePath.Value);
                     });
             }

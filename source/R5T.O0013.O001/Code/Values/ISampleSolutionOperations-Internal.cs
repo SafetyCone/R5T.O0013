@@ -28,7 +28,7 @@ namespace R5T.O0013.O001.Internal
             var solutionDirectoryPath = Instances.SolutionPathsOperator.Get_SolutionDirectoryPath(
                 solutionContext.SolutionFilePath);
 
-            Instances.FileSystemOperator.DeleteDirectory_Idempotent(
+            Instances.FileSystemOperator.Delete_Directory_Idempotent(
                 solutionDirectoryPath.Value);
 
             return solutionContext;
